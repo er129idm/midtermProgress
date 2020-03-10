@@ -1,0 +1,98 @@
+body{
+  background-color: #1E1F26;
+}
+
+.quote{
+  background-color: translate;
+  margin: 0;
+  position: absolute;
+  width: 500px;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#drink{
+  text-align: right;
+}
+#food{
+  text-align: left;
+
+}
+
+h1{
+  font-family: MyScript;
+  font-size: 40px;
+  color: #D0E1F9;
+}
+.quote p{
+  font-family: MyScript;
+  font-size: 40px;
+  color: #D0E1F9;
+}
+.quote p:hover{
+  font-size: 60px;
+}
+.item1{
+  border: 1px solid #1E1F26;
+  grid-area: header;
+  font-size: 20px;
+  font-family: MyModern;
+  text-align: center;
+  color:  #4D648D;
+ }
+.item2{
+  border: 1px solid #1E1F26;
+  grid-area: menu;
+  font-family: MyModern;
+  text-align: center;
+  color:  #4D648D;
+}
+.item3{
+  border: 1px solid #1E1F26;
+  grid-area: right;
+  color:  #4D648D;
+  font-family: MyModern;
+  text-align: center;
+}
+
+.grid-container{
+  background-color: transparent;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: grid;
+  grid-template-areas:
+  'header header header header'
+  'menu menu right right'
+  'menu menu right right';
+  grid-gap: 30px;
+
+
+}
+
+}
+.loader{
+  width: 100px;
+  height: 100px;
+  border: 16px dotted #011A27;
+  border-top: 16px solid #F0810F;
+  border-radius: 50%;
+  animation: spin 3s linear infinite;
+}
+
+@font-face{
+  font-family: MyModern;
+  src: url('Font/MODERNA_.ttf') format('truetype');
+}
+@font-face {
+  font-family: MyScript;
+  src: url('Font/GreatVibes-Regular.otf') format('opentype');
+}
+@keyframes spin {
+  0%: {transform: rotate(0deg);}
+  100% {transform: rotate(100deg);}
+
+}
