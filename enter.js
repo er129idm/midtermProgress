@@ -1,12 +1,25 @@
 function EnterFood(){
   //change the picture
-    location.href = ('page2.html');
+    fadeOutAndNavigate('page2.html');
   }
 
 function EnterDrink(){
-  location.href = ('page3.html');
+  fadeOutAndNavigate('page3.html');
 }
 
 function EnterHome(){
-  location.href = ('index.html');
+  fadeOutAndNavigate('index.html');
+}
+
+function fadeOutAndNavigate(destinationURL) {
+  /* NOTE:
+   Passes url into function, fades, then navigates to new URL after 2000ms */
+
+  var mainContainerElement = document.getElementById('mainContainer');
+  console.log(mainContainerElement);
+  mainContainerElement.style.opacity = 0.0;
+  setTimeout(function(){
+    location.href = destinationURL;
+  }, 2000);
+
 }
