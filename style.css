@@ -85,7 +85,7 @@ h1{
 
 @font-face{
   font-family: MyModern;
-  src: url('Font/MODERNA_.ttf') format('truetype');
+  src: url('Font/MODERNA_.TTF') format('truetype');
 }
 @font-face {
   font-family: MyScript;
